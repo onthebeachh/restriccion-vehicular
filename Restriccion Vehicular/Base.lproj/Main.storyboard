@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zbc-3M-RfX">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Front Controller-->
+        <scene sceneID="TnV-UI-Kkb">
+            <objects>
+                <viewController id="zbc-3M-RfX" customClass="FrontController" customModule="Restriccion_Vehicular" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QFy-vR-Fyh"/>
+                        <viewControllerLayoutGuide type="bottom" id="NPe-Mg-PZt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="WeY-RO-Q3w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="santiago_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="1aQ-8i-Scs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoL-45-GZV">
+                                <rect key="frame" x="91" y="379" width="192" height="54"/>
+                                <state key="normal" image="facebook_login.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKQ-s1-PIa">
+                                <rect key="frame" x="161" y="441" width="57" height="30"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="1aQ-8i-Scs" id="W8a-yt-gZx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZL-6m-DsO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-433.5" y="370.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="W7d-jV-CkG">
+            <objects>
+                <viewController id="KQ9-jz-FgX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9G6-5p-Dt1"/>
+                        <viewControllerLayoutGuide type="bottom" id="sus-J7-uLL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f04-dr-U52">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mjp-cI-H2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.5" y="370.5"/>
+        </scene>
+        <!--Patente Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="PatenteController" customModule="Restriccion_Vehicular" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ingresa tu patente" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="no2-6s-PZp">
+                                <rect key="frame" x="62" y="132" width="251" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FKYJ57" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UM6-R6-YOr">
+                                <rect key="frame" x="79" y="229" width="218" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UM6-R6-YOr" firstAttribute="top" secondItem="no2-6s-PZp" secondAttribute="bottom" constant="71" id="IMn-fi-zTo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="no2-6s-PZp" secondAttribute="trailing" constant="46" id="ana-Rr-rw3"/>
+                            <constraint firstItem="UM6-R6-YOr" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="63" id="dsP-xu-Bws"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UM6-R6-YOr" secondAttribute="trailing" constant="62" id="i06-se-dgP"/>
+                            <constraint firstItem="no2-6s-PZp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="46" id="t9w-d6-cMf"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817.5" y="-121.5"/>
+        </scene>
+        <!--Restriccion Controller-->
+        <scene sceneID="UbI-iH-1A7">
+            <objects>
+                <viewController id="UhX-6k-Y1u" customClass="RestriccionController" customModule="Restriccion_Vehicular" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8XW-ZO-BCi"/>
+                        <viewControllerLayoutGuide type="bottom" id="oLQ-DO-5KC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q6K-7X-sZa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkc-Id-5PU">
+                                <rect key="frame" x="42" y="173" width="291" height="93"/>
+                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0L-yC-KQG">
+                                <rect key="frame" x="42" y="321" width="291" height="93"/>
+                                <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sin sello verde" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Drb-dT-Dij">
+                                <rect key="frame" x="42" y="274" width="330" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Con sello verde" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ay9-M0-qWN">
+                                <rect key="frame" x="42" y="422" width="330" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="RESTRICCIÓN VEHICULAR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUS-1w-l9w">
+                                <rect key="frame" x="59" y="57" width="258" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xkc-Id-5PU" firstAttribute="leading" secondItem="Q6K-7X-sZa" secondAttribute="leadingMargin" constant="26" id="2sS-N8-igK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y0L-yC-KQG" secondAttribute="trailing" constant="26" id="BG7-ob-HuW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ay9-M0-qWN" secondAttribute="trailing" constant="131" id="FhZ-hQ-aa8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GUS-1w-l9w" secondAttribute="trailing" constant="42" id="RNT-cx-7lx"/>
+                            <constraint firstItem="Drb-dT-Dij" firstAttribute="leading" secondItem="Q6K-7X-sZa" secondAttribute="leadingMargin" constant="135" id="T5w-WT-uw8"/>
+                            <constraint firstItem="Ay9-M0-qWN" firstAttribute="top" secondItem="Y0L-yC-KQG" secondAttribute="bottom" constant="8" id="de7-Df-9tf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xkc-Id-5PU" secondAttribute="trailing" constant="26" id="ig8-5L-lqn"/>
+                            <constraint firstItem="GUS-1w-l9w" firstAttribute="leading" secondItem="Q6K-7X-sZa" secondAttribute="leadingMargin" constant="43" id="itJ-MS-DQ0"/>
+                            <constraint firstItem="Drb-dT-Dij" firstAttribute="top" secondItem="xkc-Id-5PU" secondAttribute="bottom" constant="8" id="k01-z0-Wwd"/>
+                            <constraint firstItem="Ay9-M0-qWN" firstAttribute="leading" secondItem="Q6K-7X-sZa" secondAttribute="leadingMargin" constant="131" id="kCn-0d-Stt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Drb-dT-Dij" secondAttribute="trailing" constant="135" id="sZd-6v-ofg"/>
+                            <constraint firstItem="Y0L-yC-KQG" firstAttribute="leading" secondItem="Q6K-7X-sZa" secondAttribute="leadingMargin" constant="26" id="wOY-bD-WZq"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="labelConSello" destination="Y0L-yC-KQG" id="DmE-Cv-EEk"/>
+                        <outlet property="labelSinSello" destination="xkc-Id-5PU" id="Xso-vU-7Ql"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="09P-G5-6aQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817.5" y="626.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook_login.png" width="492" height="108"/>
+        <image name="santiago_background.png" width="2048" height="1536"/>
+    </resources>
+</document>
