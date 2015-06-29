@@ -23,7 +23,6 @@ class RestriccionService: NSObject, IRestriccionService {
     }
     
     func getFromParse() {
-    
         let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
         dispatch_sync(dispatch_get_global_queue(priority, 0)) {
             var query = PFQuery(className: "Restriccion")
@@ -48,7 +47,6 @@ class RestriccionService: NSObject, IRestriccionService {
                         }
                     }
                     NSNotificationCenter.defaultCenter().postNotificationName("actualizarRestriccionNotification", object: self, userInfo: ["restriccion":self.restriccion])
-                    
                 } else {
                     println("Error: \(error!) \(error!.userInfo!)")
                 }

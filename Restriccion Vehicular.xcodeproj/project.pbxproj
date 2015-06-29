@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		662FB4051B3CA445002854F7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662FB4031B3CA445002854F7 /* Bolts.framework */; };
 		662FB4061B3CA445002854F7 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662FB4041B3CA445002854F7 /* Parse.framework */; };
 		662FB4081B3CA49E002854F7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662FB4071B3CA49E002854F7 /* AudioToolbox.framework */; };
 		662FB40A1B3CA4A4002854F7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662FB4091B3CA4A4002854F7 /* CFNetwork.framework */; };
@@ -31,6 +30,7 @@
 		662FB4331B3DF39C002854F7 /* IRestriccionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662FB4321B3DF39C002854F7 /* IRestriccionService.swift */; };
 		662FB4351B3DF43A002854F7 /* Restriccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662FB4341B3DF43A002854F7 /* Restriccion.swift */; };
 		6658F19D1B3FE3A8006CBE97 /* santiago_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 6658F19C1B3FE3A8006CBE97 /* santiago_background.png */; };
+		665C458A1B410055005A4550 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 665C45891B410055005A4550 /* Bolts.framework */; };
 		66DC2A511B3B3F5A0087FA4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC2A501B3B3F5A0087FA4B /* AppDelegate.swift */; };
 		66DC2A531B3B3F5A0087FA4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC2A521B3B3F5A0087FA4B /* ViewController.swift */; };
 		66DC2A561B3B3F5A0087FA4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DC2A541B3B3F5A0087FA4B /* Main.storyboard */; };
@@ -51,7 +51,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		662FB4031B3CA445002854F7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		662FB4041B3CA445002854F7 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		662FB4071B3CA49E002854F7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		662FB4091B3CA4A4002854F7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -75,6 +74,7 @@
 		662FB4321B3DF39C002854F7 /* IRestriccionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRestriccionService.swift; sourceTree = "<group>"; };
 		662FB4341B3DF43A002854F7 /* Restriccion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restriccion.swift; sourceTree = "<group>"; };
 		6658F19C1B3FE3A8006CBE97 /* santiago_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = santiago_background.png; sourceTree = "<group>"; };
+		665C45891B410055005A4550 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		66DC2A4B1B3B3F5A0087FA4B /* Restriccion Vehicular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restriccion Vehicular.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DC2A4F1B3B3F5A0087FA4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66DC2A501B3B3F5A0087FA4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				665C458A1B410055005A4550 /* Bolts.framework in Frameworks */,
 				662FB4201B3CA4F1002854F7 /* Social.framework in Frameworks */,
 				662FB41E1B3CA4EA002854F7 /* Accounts.framework in Frameworks */,
 				662FB41C1B3CA4DC002854F7 /* libsqlite3.dylib in Frameworks */,
@@ -107,7 +108,6 @@
 				662FB40A1B3CA4A4002854F7 /* CFNetwork.framework in Frameworks */,
 				662FB4081B3CA49E002854F7 /* AudioToolbox.framework in Frameworks */,
 				662FB4061B3CA445002854F7 /* Parse.framework in Frameworks */,
-				662FB4051B3CA445002854F7 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +124,7 @@
 		662FB4011B3CA41C002854F7 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				665C45891B410055005A4550 /* Bolts.framework */,
 				662FB41F1B3CA4F1002854F7 /* Social.framework */,
 				662FB41D1B3CA4EA002854F7 /* Accounts.framework */,
 				662FB41B1B3CA4DC002854F7 /* libsqlite3.dylib */,
@@ -136,7 +137,6 @@
 				662FB40D1B3CA4B2002854F7 /* CoreLocation.framework */,
 				662FB40B1B3CA4AC002854F7 /* CoreGraphics.framework */,
 				662FB4071B3CA49E002854F7 /* AudioToolbox.framework */,
-				662FB4031B3CA445002854F7 /* Bolts.framework */,
 				662FB4041B3CA445002854F7 /* Parse.framework */,
 				662FB4091B3CA4A4002854F7 /* CFNetwork.framework */,
 			);
@@ -488,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.radeon.restriccion-vehicular";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -495,6 +496,7 @@
 				INFOPLIST_FILE = "Restriccion Vehicular/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "67e8898d-a6d4-4804-91f8-d463073c4857";
 			};
 			name = Debug;
 		};
@@ -502,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.radeon.restriccion-vehicular";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -509,6 +512,7 @@
 				INFOPLIST_FILE = "Restriccion Vehicular/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "67e8898d-a6d4-4804-91f8-d463073c4857";
 			};
 			name = Release;
 		};

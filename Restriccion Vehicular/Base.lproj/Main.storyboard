@@ -25,6 +25,9 @@
                                 <state key="normal" image="facebook_login.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="FacebookLogin:" destination="zbc-3M-RfX" eventType="touchUpInside" id="Uuk-Fa-zCu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKQ-s1-PIa">
                                 <rect key="frame" x="161" y="441" width="57" height="30"/>

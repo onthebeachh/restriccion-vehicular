@@ -7,22 +7,31 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
 class FrontController: UIViewController {
 
     @IBOutlet var backgroundImageView: UIImageView!
     
+    @IBAction func FacebookLogin(sender: AnyObject) {
+
+        var permissions = ["public_profile"]
+        
+       
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let push = PFPush()
+        push.setMessage("Tests de envio de notificaciones push")
+        push.sendPushInBackground()
         
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }

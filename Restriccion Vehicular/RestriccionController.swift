@@ -21,8 +21,6 @@ class RestriccionController: UIViewController {
         dispatch_async(dispatch_get_global_queue(priority, 0)) {
             var restriccion = LibraryAPI.sharedInstance.getRestriccionActual()
             NSNotificationCenter.defaultCenter().addObserver(self, selector:"reloadLabels:", name: "actualizarRestriccionNotification", object: nil)
-            
-           
         }
         
         
